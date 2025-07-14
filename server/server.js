@@ -16,7 +16,7 @@ const __dirname = path.dirname(__filename);
 
 app.use(
   cors({
-    origin: "https://myndshift-therapy.vercel.app", 
+    origin: "https://myndshift-therapy.vercel.app/", 
     credentials: true,
   })
 );
