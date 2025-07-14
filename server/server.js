@@ -35,11 +35,6 @@ app.use((req, res, next) => {
 app.use("/api/checkins", checkinRoutes);
 
 
-// Serve frontend static files (on production / deploy)
-app.use(express.static(path.join(__dirname, "../client/dist")));
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/dist/index.html"));
-});
 
 // Start server
 connectDB().then(() => {
