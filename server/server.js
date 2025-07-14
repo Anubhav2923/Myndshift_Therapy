@@ -16,7 +16,7 @@ const __dirname = path.dirname(__filename);
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // Keep for local dev only
+    origin: "https://myndshift-therapy.vercel.app", 
     credentials: true,
   })
 );
