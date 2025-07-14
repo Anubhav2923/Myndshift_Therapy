@@ -33,9 +33,7 @@ app.use((req, res, next) => {
 
 // API routes
 app.use("/api/checkins", checkinRoutes);
-app.use("/api/test", (req, res) => {
-  res.send("backend is running");
-});
+
 
 // Serve frontend static files (on production / deploy)
 app.use(express.static(path.join(__dirname, "../client/dist")));
